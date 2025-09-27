@@ -20,6 +20,10 @@
  <meta name="twitter:description" content="Explore all that Lifetime Fitness has to offer. Learn more about our classes, personal training, and membership options.">
  <meta name="twitter:image" content="images/facility.jpg">
 
+ <link rel="stylesheet" href="#">
+ <meta name="copyright" content="Copyright 2021 Lifetime Fitness All rights reserved">
+ <meta name="license" content="GPL-3.0">
+
  <title>Lifetime Fitness</title>
 </head>
 <body>
@@ -41,8 +45,13 @@
     <a href="#">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-    
-      src="images/facility.jpg"
+
+  <picture>
+    <source media="(min-width:1264px)" srcset="images/facility.jpg">
+    <source media="(max-width:900px)" srcset="images/facility-768w.jpg">
+    <source media="(max-width:675px)" srcset="images/facility-320w.jpg">
+    <img src="images/facility.jpg" alt="treadmill, eliptical, benches, assisted squat rack, and mat in the gym with large window view in black and white." >
+  </picture>
 
   </header>
   <nav>
@@ -82,9 +91,15 @@
       </ul>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
+    <picture>
+    <source media="(min-width:1264px)" srcset="images/classes.jpg">
+    <source media="(max-width:900px)" srcset="images/classes-768w.jpg">
+    <source media="(max-width:675px)" srcset="images/classes-320w.jpg">
+    <img src="images/classes.jpg" alt="three members in class squatting with 5kg barbell in black and white." >
+    </picture>'
 
     </section>
+
     <section>
       <h2>Personal Training</h2>
       <p>
@@ -95,6 +110,12 @@
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
         src="images/dumbells.jpg"
+    <picture>
+    <source media="(min-width:1264px)" srcset="images/dumbells.jpg">
+    <source media="(max-width:900px)" srcset="images/dumbells-768w.jpg">
+    <source media="(max-width:675px)" srcset="images/dumbells-320w.jpg">
+    <img src="images/dumbells.jpg" alt="close up of racked dumbell weights with mirror on the wall in black and white." >
+    </picture>
 
     </section>
     <section>
