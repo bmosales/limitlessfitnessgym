@@ -50,7 +50,7 @@
     <source media="(min-width:1264px)" srcset="images/facility.jpg">
     <source media="(max-width:900px)" srcset="images/facility-768w.jpg">
     <source media="(max-width:675px)" srcset="images/facility-320w.jpg">
-    <img src="images/facility.jpg" alt="treadmill, eliptical, benches, assisted squat rack, and mat in the gym with large window view in black and white." >
+    <img src="images/facility.jpg" alt="treadmill, eliptical, benches, assisted squat rack, and mat in the gym with large window view in black and white.">
   </picture>
 
   </header>
@@ -96,7 +96,7 @@
     <source media="(max-width:900px)" srcset="images/classes-768w.jpg">
     <source media="(max-width:675px)" srcset="images/classes-320w.jpg">
     <img src="images/classes.jpg" alt="three members in class squatting with 5kg barbell in black and white." >
-    </picture>'
+    </picture>
 
     </section>
 
@@ -109,7 +109,6 @@
       <a href="#">Book a Free Consultation today!</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/dumbells.jpg"
     <picture>
     <source media="(min-width:1264px)" srcset="images/dumbells.jpg">
     <source media="(max-width:900px)" srcset="images/dumbells-768w.jpg">
@@ -130,16 +129,40 @@
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
-        Full Name
-        Email Address
-        Phone Number
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        Submit
+        <form action="#" method="post">
+          <div>
+	        <label for="name">Full Name<span class="required">*</span></label> 
+	        <input id="name" type="text" autocomplete="name" required>
+          </div>
+
+	        <div>
+	        <label for="email">Email<span class="required">*</span></label>
+	        <input id="email" type="email" autocomplete="email" required>
+	        </div>
+	
+	        <div>	
+	        <label for="phone">Phone<span class="required">*</span></label>
+	        <input id="phone" type="tel" autocomplete="tel" required>
+	        </div>
+		
+	        <fieldset>
+	        <legend>Membership Type<span class="required">*</span></legend>
+          <p>Select a membership option</p>
+          <select id="membership" name="membership" required>
+	        <option value="1">Monthly Membership</option>
+	        <option value="2">Annual Membership</option>
+	        <option value="3">Family & Group Plans</option>
+	        </fieldset>
+
+	        <div>
+	        <label for="message">Tell us about your fitness goals:<span class="required">*</span></label>
+	        <textarea id="message" autocomplete="off" required></textarea>
+	        </div>
+	
+        	<div>
+	        <input type="submit" name="submit" value="Submit">
+	        </div>
+        </form>
       </section>
     </section>
   </main>
